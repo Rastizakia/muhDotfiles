@@ -3,17 +3,19 @@
   border-radius: 0;
   min-height: 0;
   font-family: Material Design Icons, JetBrainsMono Nerd Font;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 window#waybar {
-  background-color: #181825;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 window#waybar.hidden {
   opacity: 0.5;
+}
+#window label {
+    background-color: red;
+    font-weight: bold;
 }
 
 #workspaces {
@@ -27,8 +29,10 @@ window#waybar.hidden {
   padding: 6px 18px;
   margin: 6px 3px;
   border-radius: 4px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  color: #89b4fa;
+  background: #09090F;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    font-weight: bolder;
 }
 
 #workspaces button.active {
@@ -46,45 +50,57 @@ window#waybar.hidden {
 #workspaces button.urgent {
   background-color: #f38ba8;
 }
-
 #memory,
 #custom-power,
 #battery,
 #backlight,
 #pulseaudio,
+#pulseaudio.microphone,
+#custom-spotify,
 #network,
 #clock,
+#custom-notifications,
+#custom-logo,
+#cpu,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: #1e1e2e;
-  color: #181825;
+  background: #09090F;
 }
-
+#cpu {
+ background:#09090F;
+  color:  #d3869b;
+  font-weight: bolder;
+}
 #custom-power {
-  margin-right: 6px;
+    background: radial-gradient(circle, rgba(203,166,247,1) 0%, rgba(193,168,247,1) 12%, rgba(249,226,175,1) 19%, rgba(189,169,247,1) 20%, rgba(182,171,247,1) 24%, rgba(198,255,194,1) 36%, rgba(177,172,247,1) 37%, rgba(170,173,248,1) 48%, rgba(255,255,255,1) 52%, rgba(166,174,248,1) 52%, rgba(160,175,248,1) 59%, rgba(148,226,213,1) 66%, rgba(155,176,248,1) 67%, rgba(152,177,248,1) 68%, rgba(205,214,244,1) 77%, rgba(148,178,249,1) 78%, rgba(144,179,250,1) 82%, rgba(180,190,254,1) 83%, rgba(141,179,250,1) 90%, rgba(137,180,250,1) 100%); 
+    background-size: 400% 400%;
+    color: black;
 }
 
 #custom-logo {
+  color: black;
   padding-right: 7px;
   padding-left: 7px;
   margin-left: 5px;
   font-size: 15px;
   border-radius: 8px 0px 0px 8px;
-  color: #61538D;
 }
 
 #memory {
-  background-color: #fab387;
+  background-color: #09090F;
+  color:  #d3869b;
+  font-weight: bolder;
 }
 #battery {
-  background-color: #f38ba8;
+  background-color: #09090F;
+  color:  #d3869b;
+  font-weight: bolder;
 }
 @keyframes blink {
   to {
     background-color: #f38ba8;
-    color: #181825;
   }
 }
 
@@ -100,29 +116,60 @@ window#waybar.hidden {
   animation-direction: alternate;
 }
 #battery.charging {
-  background-color: #a6e3a1;
+  background-color: #09090F;
 }
 
 #backlight {
-  background-color: #fab387;
+  background-color: #09090F;
 }
 
 #pulseaudio {
-  background-color: #f9e2af;
+  background-color: #09090F;
+  color:  #d3869b;
+  font-weight: bolder;
+}
+#pulseaudio.microphone {
+  background-color: #09090F;
+  color:  #d3869b;
+  font-weight: bolder;
+}
+#custom-spotify {
+    background-color: #09090F;
+    color: #89b4fa;
+    font-weight:bolder;
+}
+#custom-notifications {
+    background-color: #09090F;
+    color: #89b4fa;
+    font-weight:bolder;
 }
 
 #network {
-  background-color: #94e2d5;
+  background-color: #09090F;
   padding-right: 17px;
+  color:  #d3869b;
+  font-weight: bolder;
+  color:  #d3869b;
+  font-weight: bolder;
 }
 
 #clock {
   font-family: JetBrainsMono Nerd Font;
-  background-color: #cba6f7;
+    background: rgb(205,214,244);
+    background: linear-gradient(118deg, rgba(205,214,244,1) 5%, rgba(243,139,168,1) 5%, rgba(243,139,168,1) 20%, rgba(205,214,244,1) 20%, rgba(205,214,244,1) 40%, rgba(243,139,168,1) 40%, rgba(243,139,168,1) 60%, rgba(205,214,244,1) 60%, rgba(205,214,244,1) 80%, rgba(243,139,168,1) 80%, rgba(243,139,168,1) 95%, rgba(205,214,244,1) 95%); 
+
+    background-size: 200% 300%;
+
+      color: #fff ;
+    color: #09090F;
+  font-weight: bolder;
+
 }
 
 #custom-power {
-  background-color: #f2cdcd;
+  background-color: #09090F;
+  color:  #d3869b;
+  font-weight: bolder;
 }
 
 
